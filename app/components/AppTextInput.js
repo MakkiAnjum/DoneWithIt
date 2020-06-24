@@ -8,7 +8,10 @@ function AppTextInput({ icon, ...rest }) {
     return (
         <View style={styles.container}>
             {icon && <MaterialCommunityIcons name={icon} size={20} color={defaultStyles.colors.medium} style={styles.icon} />}
-            <TextInput style={defaultStyles.text} {...rest} />
+            <TextInput
+                placeholderTextColor={defaultStyles.colors.medium}
+                style={defaultStyles.text} {...rest}
+            />
         </View>
     );
 }
