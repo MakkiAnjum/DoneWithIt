@@ -1,18 +1,16 @@
-import React from 'react';
-import { StyleSheet } from 'react-native'
+import React from "react";
+import { StyleSheet } from "react-native";
 
-import AppText from '../AppText';
+import Text from "../Text";
 
 function ErrorMessage({ error, visible }) {
-    if (!error || !visible) return null;
+  if (!visible || !error) return null;
 
-    return (
-        <AppText style={styles.error}>{error}</AppText>
-    );
+  return <Text style={styles.error}>{error}</Text>;
 }
 
 const styles = StyleSheet.create({
-    error: { color: 'red' }
-})
+  error: { color: "red" },
+});
 
 export default ErrorMessage;
