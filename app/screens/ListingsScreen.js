@@ -48,7 +48,7 @@ function ListingsScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 20,
+    padding: 6,
     backgroundColor: colors.light,
   },
 });
